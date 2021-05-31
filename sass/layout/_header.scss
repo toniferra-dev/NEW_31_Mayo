@@ -1,2 +1,46 @@
 /* @HEADERS */
 /* ********** */
+
+// IMAGENES
+.navegacion{
+    display: grid;
+    padding: 20px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    // auto-fill vs auto-fit
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+}
+main{
+    display: grid;
+    // auto-fill vs auto-fit
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+img{
+    width: 100%;
+}
+
+nav{
+    grid-column: 3 / span-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10em);
+    grid-gap: 1rem;
+    color: white;
+}
+
+// BANNER img
+h1, nav a{
+    color: white;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+    
+    video, .navegacion{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
